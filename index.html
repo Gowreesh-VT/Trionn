@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trionn - Time to Roar!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-container">
+            <div class="lion-animation">
+                <img src="Assets/Intro-img/apple-touch-icon-180x180.ff2c4ba1.png" alt="Lion" class="lion-image" id="lionImage">
+            </div>
+            <div class="loading-text">
+                <h2>time to roar!</h2>
+                <div class="loading-bar">
+                    <div class="loading-progress" id="loadingProgress"></div>
+                </div>
+                <p class="loading-percentage" id="loadingPercentage">0%</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="Assets/Wepb/logo.svg" alt="Trionn" class="logo-img">
+                </div>
+
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon moon" aria-hidden="true">☾</span>
+                        <span class="theme-icon sun" aria-hidden="true">☀</span>
+                    </button>
+                    <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">
+                        <span class="sound-icon on" aria-hidden="true">🔊</span>
+                        <span class="sound-icon off" aria-hidden="true">🔇</span>
+                    </button>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="tr__banner">
+            <div class="tr__container tr__banner__container">
+                <div class="tr__banner__content">
+                    <h1 class="hidden sm:block">
+                        <span>ROAR IN THE</span>
+                        <span>DIGITAL WILDERNESS.</span>
+                    </h1>
+                    <h1 class="block sm:hidden">
+                        <span>ROAR</span>
+                        <span>IN THE DIGITAL</span>
+                        <span>WILDERNESS.</span>
+                    </h1>
+                    <p class="px-1 sm:px-0 mt-4 mb-8 sm:mb-4 tr__banner__fadeUp">
+                        <span>WE ROAR WITH SUCCESS, DELIVERING THE TRIONN<sup>®</sup></span>
+                        <span>THROUGH VERSATILE DESIGN, BRANDING AND THE LATEST</span>
+                        <span>TECH DEVELOPMENT TO COMPANIES.</span>
+                    </p>
+                    <p class="text-center tr__banner__fadeUp">
+                        <a aria-label="Scroll down" class="inline-block" href="#about">
+                            <img alt="Move down" width="24" height="24" class="opacity-40" src="data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 16L8 12H16L12 16Z' fill='%23ffffff'/%3E%3C/svg%3E"/>
+                        </a>
+                    </p>
+                    
+                    <div class="tr__banner_bottom">
+                        <a class="button tr__banner__fadeUp" aria-label="Explore work" href="#portfolio">
+                            Explore work
+                            <span class="tr__button__background"></span>
+                        </a>
+                        <div class="video-container">
+                            <video id="heroVideo" autoplay muted loop playsinline>
+                                <source src="Assets/intro-video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <a class="button tr__banner__fadeUp" aria-label="Get in touch" href="#contact">
+                            Get in touch
+                            <span class="tr__button__background"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Brands Marquee -->
+    <section class="brands-marquee" aria-label="our clients and partners">
+        <div class="brands-track">
+            <img src="Assets/Wepb/technis-main-landscape.webp" alt="Technis logo" loading="lazy">
+            <img src="Assets/Wepb/loftloom-main-landscape.webp" alt="Loftloom logo" loading="lazy">
+            <img src="Assets/Wepb/dribbble1.webp" alt="Dribbble shot 1" loading="lazy">
+            <img src="Assets/Wepb/dribbble2.webp" alt="Dribbble shot 2" loading="lazy">
+            <img src="Assets/Wepb/dribbble3.webp" alt="Dribbble shot 3" loading="lazy">
+            <img src="Assets/Wepb/dribbble4.webp" alt="Dribbble shot 4" loading="lazy">
+            <img src="Assets/Wepb/dribbble5.webp" alt="Dribbble shot 5" loading="lazy">
+            <img src="Assets/Wepb/dribbble6.webp" alt="Dribbble shot 6" loading="lazy">
+            <!-- duplicate for seamless loop -->
+            <img src="Assets/Wepb/technis-main-landscape.webp" alt="Technis logo" loading="lazy" aria-hidden="true">
+            <img src="Assets/Wepb/loftloom-main-landscape.webp" alt="Loftloom logo" loading="lazy" aria-hidden="true">
+            <img src="Assets/Wepb/dribbble1.webp" alt="" loading="lazy" aria-hidden="true">
+            <img src="Assets/Wepb/dribbble2.webp" alt="" loading="lazy" aria-hidden="true">
+            <img src="Assets/Wepb/dribbble3.webp" alt="" loading="lazy" aria-hidden="true">
+            <img src="Assets/Wepb/dribbble4.webp" alt="" loading="lazy" aria-hidden="true">
+            <img src="Assets/Wepb/dribbble5.webp" alt="" loading="lazy" aria-hidden="true">
+            <img src="Assets/Wepb/dribbble6.webp" alt="" loading="lazy" aria-hidden="true">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">We are <span class="highlight">Trionn</span></h2>
+                <p class="section-description" style="text-align: center;">
+                    A creative digital agency that specializes in building exceptional web experiences, 
+                    mobile applications, and digital strategies that drive results.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <h2 class="section-title center">What we do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Web Design</h3>
+                    <p>Beautiful, responsive websites that convert visitors into customers</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Development</h3>
+                    <p>Fast, secure, and scalable web applications built with modern technologies</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Digital Strategy</h3>
+                    <p>Comprehensive digital strategies to grow your online presence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-container">
+            <h2 class="section-title center">Recent Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h4>E-commerce Platform</h4>
+                            <p>Modern online store with seamless checkout</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h4>Corporate Website</h4>
+                            <p>Professional business website with CMS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h4>Mobile App</h4>
+                            <p>Cross-platform mobile application</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <p>Ready to start your project? Let's discuss how we can help you.</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            
+            <div class="contact-info">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <span class="contact-icon">📧</span>
+                        <a href="mailto:hello@trionn.com" class="contact-link">hello@trionn.com</a>
+                    </div>
+                    <div class="contact-method">
+                        <span class="contact-icon">📱</span>
+                        <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://trionn.com/_next/static/media/footer-logo.7dd398e2.svg" alt="Trionn" class="footer-logo-img">
+            </div>
+            <nav class="footer-nav">
+                <a href="#contact" class="footer-link">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Cursor Following Canvas -->
+    <canvas id="cursorCanvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9998;"></canvas>
+    
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>
